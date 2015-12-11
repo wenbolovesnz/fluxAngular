@@ -1,0 +1,14 @@
+<md-toolbar layout="row" layout-align="center center">
+
+  <md-button>Flux Angular</md-button>
+
+  <section flex layout="row" layout-align="center center">
+    <md-button href="#" class="md-raised" ng-click="vm.login()" ng-show="!vm.user.loggedIn">Log in</md-button>
+    <md-button href="#" class="md-raised" ng-show="vm.user.loggedIn">Orders</md-button>
+    <md-button href="#" class="md-raised" ng-show="vm.user.loggedIn">My Account</md-button>
+    <md-button href="#" class="md-raised" ng-click="vm.logout()" ng-show="vm.user.loggedIn">Log out</md-button>
+  </section>
+
+  <md-button class="acme-navbar-text">{{vm.user.username}}</md-button>
+
+</md-toolbar>
